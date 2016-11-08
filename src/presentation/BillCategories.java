@@ -6,7 +6,7 @@ public class BillCategories {
 	
 
 	public void getCombo(JComboBox<String> comboBox) {
-		
+		 
 //		1200 - Salgsomkostninger
 		comboBox.addItem("          **** 1200 - Salgsomkostninger ****");
 		comboBox.addItem("1210 - Vareinkøb");
