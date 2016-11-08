@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!--AgileJ Ltd. (http://www.agilej.com)--><ajsv>
+    <diagram creationDate="2016-nov.-09 00:09" licenseGrade="evaluation" licenseeName="anon" licenseeOrganization="unknown" populationMethod="manual" version="1.9.0.v20160922-0809">
+        <filterScript>
+
+// no filter script yet defined for this class diagram
+// use CTRL+SPACE for completion suggestions
+
+</filterScript>
+        <class className="dlayer.RegningSQL" modelMemberId="dlayer.RegningSQL" project="AdemOkmenPhotography3" xLocation="8104" yLocation="3703"/>
+        <class className="presentation.CreateBookingGUI" modelMemberId="presentation.CreateBookingGUI" project="AdemOkmenPhotography3" xLocation="-1684" yLocation="3754"/>
+        <class className="model.MomsOpg" modelMemberId="model.MomsOpg" project="AdemOkmenPhotography3" xLocation="4451" yLocation="5146"/>
+        <class className="presentation.BillCategories" modelMemberId="presentation.BillCategories" project="AdemOkmenPhotography3" xLocation="7109" yLocation="3746"/>
+        <class className="dlayer.FakturaSQL" modelMemberId="dlayer.FakturaSQL" project="AdemOkmenPhotography3" xLocation="13999" yLocation="3931"/>
+        <class className="presentation.Transaction" modelMemberId="presentation.Transaction" project="AdemOkmenPhotography3" xLocation="16319" yLocation="4185"/>
+        <class className="presentation.KundeFaktGUI" modelMemberId="presentation.KundeFaktGUI" project="AdemOkmenPhotography3" xLocation="12535" yLocation="2001"/>
+        <class className="presentation.MomsopgGUI" modelMemberId="presentation.MomsopgGUI" project="AdemOkmenPhotography3" xLocation="4278" yLocation="3717"/>
+        <class className="presentation.InvoiceCategory" modelMemberId="presentation.InvoiceCategory" project="AdemOkmenPhotography3" xLocation="11509" yLocation="3929"/>
+        <class className="presentation.GetCategory" modelMemberId="presentation.GetCategory" project="AdemOkmenPhotography3" xLocation="9419" yLocation="3721"/>
+        <class className="presentation.resOpgGUI" modelMemberId="presentation.resOpgGUI" project="AdemOkmenPhotography3" xLocation="566" yLocation="3783"/>
+        <class className="presentation.Aarsopgoerelse" modelMemberId="presentation.Aarsopgoerelse" project="AdemOkmenPhotography3" xLocation="1930" yLocation="3776"/>
+        <class className="presentation.RegningGUI" modelMemberId="presentation.RegningGUI" project="AdemOkmenPhotography3" xLocation="7854" yLocation="1914"/>
+        <class className="presentation.PhoneOrder" modelMemberId="presentation.PhoneOrder" project="AdemOkmenPhotography3" xLocation="16405" yLocation="2191"/>
+        <class className="dlayer.MomsSQL" modelMemberId="dlayer.MomsSQL" project="AdemOkmenPhotography3" xLocation="5575" yLocation="5201"/>
+        <class className="presentation.GetMoms" modelMemberId="presentation.GetMoms" project="AdemOkmenPhotography3" xLocation="13326" yLocation="3945"/>
+        <class className="presentation.BookingGUI" modelMemberId="presentation.BookingGUI" project="AdemOkmenPhotography3" xLocation="-1613" yLocation="1911"/>
+        <class className="model.AarsOpg" modelMemberId="model.AarsOpg" project="AdemOkmenPhotography3" xLocation="1265" yLocation="5365"/>
+        <class className="presentation.MomsGUI" modelMemberId="presentation.MomsGUI" project="AdemOkmenPhotography3" xLocation="2140" yLocation="2020"/>
+        <class className="model.ResOpg" modelMemberId="model.ResOpg" project="AdemOkmenPhotography3" xLocation="350" yLocation="5460"/>
+        <class className="presentation.GuiMain" modelMemberId="presentation.GuiMain" project="AdemOkmenPhotography3" xLocation="6654" yLocation="1022"/>
+        <class className="dlayer.AarsSQL" modelMemberId="dlayer.AarsSQL" project="AdemOkmenPhotography3" xLocation="2695" yLocation="5448"/>
+        <class className="main.Main" modelMemberId="main.Main" project="AdemOkmenPhotography3" xLocation="6673" yLocation="670"/>
+    </diagram>
+</ajsv>
