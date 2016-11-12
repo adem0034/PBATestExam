@@ -12,7 +12,7 @@ public class GetCategory {
 
 		//		1200 - Salgsomkostninger
 
-		if (category.equals("1210 - Vareinkøb")) {
+		if (category.equals("1210 - Vareinkï¿½b")) {
 
 
 			try {
@@ -25,7 +25,7 @@ public class GetCategory {
 
 		}
 
-		else if (category.equals("1220 - Køb af varer i EU")) {
+		else if (category.equals("1220 - Kï¿½b af varer i EU")) {
 			try {
 				RegningSQL.add1220KoebVarerEU(priceNoVat);
 			} catch (Exception e) {
@@ -34,7 +34,7 @@ public class GetCategory {
 
 		}
 
-		else if (category.equals("1230 - Køb af ydeleser i EU")) {
+		else if (category.equals("1230 - Kï¿½b af ydeleser i EU")) {
 			try {
 				RegningSQL.add1230KoebYdelseEU(priceNoVat);
 
@@ -44,7 +44,7 @@ public class GetCategory {
 
 		}
 
-		else if (category.equals("1240 - Køb af varer udenfor EU")) {
+		else if (category.equals("1240 - Kï¿½b af varer udenfor EU")) {
 			try {
 				RegningSQL.add1240KoebVarerUdland(priceNoVat);
 			} catch (Exception e) {
@@ -53,7 +53,7 @@ public class GetCategory {
 
 		}
 
-		else if (category.equals("1250 - Køb af ydelser udenfor EU")) {
+		else if (category.equals("1250 - Kï¿½b af ydelser udenfor EU")) {
 			try {
 				RegningSQL.add1250KoebYdelseUdland(priceNoVat);
 			} catch (Exception e) {
@@ -84,7 +84,7 @@ public class GetCategory {
 
 
 
-		//		1400 - Lønomkostninger
+		//		1400 - Lï¿½nomkostninger
 
 
 		else if (category.equals("1410 - AM-indkomst")) {
@@ -148,7 +148,7 @@ public class GetCategory {
 			}
 
 		}
-		else if (category.equals("1480 - Tillæg")) {
+		else if (category.equals("1480 - Tillï¿½g")) {
 			try {
 				RegningSQL.add1480Tillaeg(priceNoVat);
 			} catch (Exception e) {
@@ -202,7 +202,7 @@ public class GetCategory {
 
 		}
 		
-		else if (category.equals("1540 - Vedligeholdelse og rengøring")) {
+		else if (category.equals("1540 - Vedligeholdelse og rengï¿½ring")) {
 			try {
 				RegningSQL.add1540VedligeholdRengoering(priceNoVat);
 			} catch (Exception e) {
@@ -242,7 +242,7 @@ public class GetCategory {
 
 		}
 
-		else if (category.equals("1630 - Reklamer og markedsføring")) {
+		else if (category.equals("1630 - Reklamer og markedsfï¿½ring")) {
 			try {
 				RegningSQL.add1630ReklameMarketing(priceNoVat);
 			} catch (Exception e) {
@@ -261,7 +261,7 @@ public class GetCategory {
 
 		}
 
-		else if (category.equals("1650 - Repræsentation")) {
+		else if (category.equals("1650 - Reprï¿½sentation")) {
 			try {
 				RegningSQL.add1650Raepraesentation(priceNoVat);
 			} catch (Exception e) {
@@ -282,7 +282,7 @@ public class GetCategory {
 
 //		1700 - Bilomkostninger
 		
-		else if (category.equals("1710 - Brændstof")) {
+		else if (category.equals("1710 - Brï¿½ndstof")) {
 			try {
 				RegningSQL.add1710Braendstof(priceNoVat);
 			} catch (Exception e) {
@@ -318,7 +318,7 @@ public class GetCategory {
 
 		}
 		
-		else if (category.equals("1750 - Vægtafgift")) {
+		else if (category.equals("1750 - Vï¿½gtafgift")) {
 			try {
 				RegningSQL.add1750Vaegtafgift(priceNoVat);
 			} catch (Exception e) {
@@ -360,7 +360,7 @@ public class GetCategory {
 
 
 
-		else if (category.equals("1840 - Små anskaffelser")) {
+		else if (category.equals("1840 - Smï¿½ anskaffelser")) {
 			try {
 				RegningSQL.add1840smaaanskaffelser(priceNoVat);
 			} catch (Exception e) {
@@ -369,7 +369,7 @@ public class GetCategory {
 
 		}
 
-		else if (category.equals("1850 - Kørselsgodtgørelse")) {
+		else if (category.equals("1850 - Kï¿½rselsgodtgï¿½relse")) {
 			try {
 				RegningSQL.add1850Koerselsgodtgoerelse(priceNoVat);
 			} catch (Exception e) {
@@ -405,7 +405,7 @@ public class GetCategory {
 
 		}
 
-		else if (category.equals("1890 - Tab på kunder")) {
+		else if (category.equals("1890 - Tab pï¿½ kunder")) {
 			try {
 				RegningSQL.add1890TabPaaKunder(priceNoVat);
 			} catch (Exception e) {
@@ -455,9 +455,9 @@ public class GetCategory {
 
 		}
 
-//		2500 - Ekstraordinære poster
+//		2500 - Ekstraordinï¿½re poster
 
-		else if (category.equals("2520 - Ekstraordinære poster")) {
+		else if (category.equals("2520 - Ekstraordinï¿½re poster")) {
 			try {
 				RegningSQL.add2520EkstraUdgiftMoms(priceNoVat);
 			} catch (Exception e) {
@@ -467,9 +467,9 @@ public class GetCategory {
 		}
 		
 		
-//		5200 - Immaterielle anlægsaktiver
+//		5200 - Immaterielle anlï¿½gsaktiver
 
-		else if (category.equals("5210 - Immatterielle anlægsaktiver")) {
+		else if (category.equals("5210 - Immatterielle anlï¿½gsaktiver")) {
 			try {
 				RegningSQL.add5210ImmatAnlægsaktiv(priceNoVat);
 			} catch (Exception e) {
@@ -478,7 +478,7 @@ public class GetCategory {
 
 		}
 		
-//		5300 - Materielle anlægsaktiver
+//		5300 - Materielle anlï¿½gsaktiver
 		
 
 		else if (category.equals("5310 - Driftsmidler og inventar(kostpris)")) {
@@ -498,7 +498,7 @@ public class GetCategory {
 
 		}
 		
-//		5400 - Finansielle anlægsaktiver
+//		5400 - Finansielle anlï¿½gsaktiver
 
 		else if (category.equals("5410 - Kapitalandele af tilknyttede virksomheder")) {
 			try {
@@ -516,7 +516,7 @@ public class GetCategory {
 			}
 
 		}
-		else if (category.equals("5430 - Andre værdipapirer og kapitalandele")) {
+		else if (category.equals("5430 - Andre vï¿½rdipapirer og kapitalandele")) {
 			try {
 				RegningSQL.add5430AndreVaerdiKapital(priceNoVat);
 			} catch (Exception e) {
@@ -555,7 +555,7 @@ public class GetCategory {
 		}
 
 		
-//		5800 - Omsætningsaktiver
+//		5800 - Omsï¿½tningsaktiver
 		else if (category.equals("5810 - Til gode hos kunder")) {
 			try {
 				RegningSQL.add5810TilgodeKunder(priceNoVat);
@@ -565,7 +565,7 @@ public class GetCategory {
 
 		}
 		
-		else if (category.equals("5820 - Til gode hos leverandører")) {
+		else if (category.equals("5820 - Til gode hos leverandï¿½rer")) {
 			try {
 				RegningSQL.add5820TilgodeLeverand(priceNoVat);
 			} catch (Exception e) {

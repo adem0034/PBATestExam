@@ -7,7 +7,7 @@ import java.sql.SQLException;
 
 public class FakturaSQL
 {
-	// Metode der tilføjer regning.
+	// Metode der tilfæjer regning.
 	//	Salgsomkostninger
 	public static void addFaktura(String fName, String lName, String tlf, String email, String roadName,
 			String areaCode, String city, String CVR, String companyName, String category,
@@ -26,7 +26,7 @@ public class FakturaSQL
 
 
 
-			// Tilføjer til DB med værdierne fra RegningGUI
+			// Tilfæjer til DB med værdierne fra RegningGUI
 			prepareStatement.setString(1, fName );
 			prepareStatement.setString(2, lName );
 			prepareStatement.setString(3, tlf );

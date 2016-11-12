@@ -1,0 +1,184 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  Internal Error (exceptions.cpp:416), pid=3824, tid=0x0000000000002f04
+#  fatal error: ExceptionMark constructor expects no pending exceptions
+#
+# JRE version: Java(TM) SE Runtime Environment (8.0_111-b14) (build 1.8.0_111-b14)
+# Java VM: Java HotSpot(TM) 64-Bit Server VM (25.111-b14 mixed mode windows-amd64 compressed oops)
+# Failed to write core dump. Minidumps are not enabled by default on client versions of Windows
+#
+# If you would like to submit a bug report, please visit:
+#   http://bugreport.java.com/bugreport/crash.jsp
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x0000000002e7e800):  JavaThread "main" [_thread_in_vm, id=12036, stack(0x0000000002bb0000,0x0000000002cb0000)]
+
+Stack: [0x0000000002bb0000,0x0000000002cb0000]
+[error occurred during error reporting (printing stack bounds), id 0xc0000005]
+
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+  0x000000001acfc000 JavaThread "Attach Listener" daemon [_thread_blocked, id=9068, stack(0x000000001c280000,0x000000001c380000)]
+  0x000000001acfb000 JavaThread "Signal Dispatcher" daemon [_thread_blocked, id=15056, stack(0x000000001c180000,0x000000001c280000)]
+  0x000000001acdf000 JavaThread "Finalizer" daemon [_thread_blocked, id=9092, stack(0x000000001bf70000,0x000000001c070000)]
+  0x0000000006183000 JavaThread "Reference Handler" daemon [_thread_blocked, id=10032, stack(0x000000001be50000,0x000000001bf50000)]
+=>0x0000000002e7e800 JavaThread "main" [_thread_in_vm, id=12036, stack(0x0000000002bb0000,0x0000000002cb0000)]
+
+Other Threads:
+  0x000000001acb7000 VMThread [stack: 0x000000001bd50000,0x000000001be50000] [id=13840]
+
+VM state:not at safepoint (normal execution)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+Heap:
+ PSYoungGen      total 38400K, used 665K [0x00000000d5f80000, 0x00000000d8a00000, 0x0000000100000000)
+  eden space 33280K, 2% used [0x00000000d5f80000,0x00000000d6026670,0x00000000d8000000)
+  from space 5120K, 0% used [0x00000000d8500000,0x00000000d8500000,0x00000000d8a00000)
+  to   space 5120K, 0% used [0x00000000d8000000,0x00000000d8000000,0x00000000d8500000)
+ ParOldGen       total 87552K, used 0K [0x0000000081e00000, 0x0000000087380000, 0x00000000d5f80000)
+  object space 87552K, 0% used [0x0000000081e00000,0x0000000081e00000,0x0000000087380000)
+ Metaspace       used 2070K, capacity 4480K, committed 4480K, reserved 1056768K
+  class space    used 228K, capacity 384K, committed 384K, reserved 1048576K
+
+Card table byte_map: [0x0000000015560000,0x0000000015960000] byte_map_base: 0x0000000015151000
+
+Marking Bits: (ParMarkBitMap*) 0x000000006d30a6c0
+ Begin Bits: [0x0000000016010000, 0x0000000017f98000)
+ End Bits:   [0x0000000017f98000, 0x0000000019f20000)
+
+Polling page: 0x0000000001200000
+
+CodeCache: size=245760Kb used=432Kb max_used=432Kb free=245327Kb
+ bounds [0x00000000061a0000, 0x0000000006410000, 0x00000000151a0000]
+ total_blobs=159 nmethods=0 adapters=125
+ compilation: enabled
+
+Compilation events (0 events):
+No events
+
+GC Heap History (0 events):
+No events
+
+Deoptimization events (0 events):
+No events
+
+Internal exceptions (3 events):
+Event: 1.898 Thread 0x0000000002e7e800 Exception <a 'java/lang/NoSuchMethodError': Method sun.misc.Unsafe.defineClass(Ljava/lang/String;[BII)Ljava/lang/Class; name or signature does not match> (0x00000000d5f87c78) thrown at [C:\re\workspace\8-2-build-windows-amd64-cygwin\jdk8u111\7883\hotspot\
+Event: 1.898 Thread 0x0000000002e7e800 Exception <a 'java/lang/NoSuchMethodError': Method sun.misc.Unsafe.prefetchRead(Ljava/lang/Object;J)V name or signature does not match> (0x00000000d5f87f60) thrown at [C:\re\workspace\8-2-build-windows-amd64-cygwin\jdk8u111\7883\hotspot\src\share\vm\prims
+Event: 1.938 Thread 0x0000000002e7e800 Exception <a 'java/lang/NoSuchMethodError': Method java.lang.ClassLoader.classLoaderFinalizeEvent(Ljava/lang/Object;)V not found> (0x00000000d5fd1d98) thrown at [C:\re\workspace\8-2-build-windows-amd64-cygwin\jdk8u111\7883\hotspot\src\share\vm\prims\jni.c
+
+Events (10 events):
+Event: 1.935 loading class sun/misc/URLClassPath
+Event: 1.935 loading class sun/misc/URLClassPath done
+Event: 1.935 loading class sun/net/www/protocol/jar/Handler
+Event: 1.935 loading class sun/net/www/protocol/jar/Handler done
+Event: 1.935 loading class sun/misc/Launcher$AppClassLoader$1
+Event: 1.935 loading class sun/misc/Launcher$AppClassLoader$1 done
+Event: 1.937 loading class java/lang/SystemClassLoaderAction
+Event: 1.937 loading class java/lang/SystemClassLoaderAction done
+Event: 1.938 Thread 0x000000001acfb000 Thread added: 0x000000001acfb000
+Event: 1.938 Thread 0x000000001acfc000 Thread added: 0x000000001acfc000
+
+
+Dynamic libraries:
+0x00007ff7bc080000 - 0x00007ff7bc0b7000 	C:\Program Files\Java\jdk1.8.0_111\bin\java.exe
+0x00007ffaca2e0000 - 0x00007ffaca4b1000 	C:\WINDOWS\SYSTEM32\ntdll.dll
+0x00007ffac8410000 - 0x00007ffac84bb000 	C:\WINDOWS\System32\KERNEL32.DLL
+0x00007ffaa7e80000 - 0x00007ffaa7eb3000 	D:\Programs\AVG\Av\avghooka.dll
+0x00007ffac6060000 - 0x00007ffac627d000 	C:\WINDOWS\System32\KERNELBASE.dll
+0x00007ffac6b80000 - 0x00007ffac6c22000 	C:\WINDOWS\System32\ADVAPI32.dll
+0x00007ffac66b0000 - 0x00007ffac674e000 	C:\WINDOWS\System32\msvcrt.dll
+0x00007ffac84e0000 - 0x00007ffac8539000 	C:\WINDOWS\System32\sechost.dll
+0x00007ffac6580000 - 0x00007ffac66a1000 	C:\WINDOWS\System32\RPCRT4.dll
+0x00007ffac8db0000 - 0x00007ffac8f15000 	C:\WINDOWS\System32\USER32.dll
+0x00007ffac6280000 - 0x00007ffac629e000 	C:\WINDOWS\System32\win32u.dll
+0x00007ffac8280000 - 0x00007ffac82b4000 	C:\WINDOWS\System32\GDI32.dll
+0x00007ffac62a0000 - 0x00007ffac6422000 	C:\WINDOWS\System32\gdi32full.dll
+0x00007ffabb1b0000 - 0x00007ffabb429000 	C:\WINDOWS\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.14393.447_none_42191651c6827bb3\COMCTL32.dll
+0x00007ffac68b0000 - 0x00007ffac6b77000 	C:\WINDOWS\System32\combase.dll
+0x00007ffac5e50000 - 0x00007ffac5f45000 	C:\WINDOWS\System32\ucrtbase.dll
+0x00007ffac54e0000 - 0x00007ffac554a000 	C:\WINDOWS\System32\bcryptPrimitives.dll
+0x00007ffac8fc0000 - 0x00007ffac8fee000 	C:\WINDOWS\System32\IMM32.DLL
+0x00007ffac51d0000 - 0x00007ffac5390000 	D:\Programs\Dynatrace\agent\lib64\oneagentproc.dll
+0x00007ffac5120000 - 0x00007ffac512b000 	C:\WINDOWS\SYSTEM32\CRYPTBASE.DLL
+0x000000006ca10000 - 0x000000006cae2000 	C:\Program Files\Java\jdk1.8.0_111\jre\bin\msvcr100.dll
+0x000000006caf0000 - 0x000000006d38a000 	C:\Program Files\Java\jdk1.8.0_111\jre\bin\server\jvm.dll
+0x00007ffac83a0000 - 0x00007ffac83a8000 	C:\WINDOWS\System32\PSAPI.DLL
+0x00007ffaa6e00000 - 0x00007ffaa6e09000 	C:\WINDOWS\SYSTEM32\WSOCK32.dll
+0x00007ffac8210000 - 0x00007ffac827a000 	C:\WINDOWS\System32\WS2_32.dll
+0x00007ffac2f80000 - 0x00007ffac2fa3000 	C:\WINDOWS\SYSTEM32\WINMM.dll
+0x00007ffabbf10000 - 0x00007ffabbf1a000 	C:\WINDOWS\SYSTEM32\VERSION.dll
+0x00007ffac2f20000 - 0x00007ffac2f4b000 	C:\WINDOWS\SYSTEM32\WINMMBASE.dll
+0x00007ffac5720000 - 0x00007ffac5762000 	C:\WINDOWS\System32\cfgmgr32.dll
+0x000000006dc10000 - 0x000000006dc1f000 	C:\Program Files\Java\jdk1.8.0_111\jre\bin\verify.dll
+0x000000006c9a0000 - 0x000000006c9c9000 	C:\Program Files\Java\jdk1.8.0_111\jre\bin\java.dll
+0x00007ffa7e4e0000 - 0x00007ffa7efe0000 	D:\Programs\Dynatrace\agent\lib64\oneagentloader.dll
+0x00007ffac83b0000 - 0x00007ffac840c000 	C:\WINDOWS\System32\WLDAP32.dll
+0x00007ffac6c40000 - 0x00007ffac8149000 	C:\WINDOWS\System32\SHELL32.dll
+0x00007ffac5770000 - 0x00007ffac5e4a000 	C:\WINDOWS\System32\windows.storage.dll
+0x00007ffac5490000 - 0x00007ffac54dc000 	C:\WINDOWS\System32\powrprof.dll
+0x00007ffac8330000 - 0x00007ffac8382000 	C:\WINDOWS\System32\shlwapi.dll
+0x00007ffac5450000 - 0x00007ffac545f000 	C:\WINDOWS\System32\kernel.appcore.dll
+0x00007ffac64d0000 - 0x00007ffac6579000 	C:\WINDOWS\System32\shcore.dll
+0x00007ffac5460000 - 0x00007ffac5474000 	C:\WINDOWS\System32\profapi.dll
+0x00007ffac8840000 - 0x00007ffac8977000 	C:\WINDOWS\System32\ole32.dll
+0x00007ffabc930000 - 0x00007ffabc93c000 	C:\WINDOWS\SYSTEM32\Secur32.dll
+0x00007ffac4460000 - 0x00007ffac4498000 	C:\WINDOWS\SYSTEM32\IPHLPAPI.DLL
+0x00007ffac4bf0000 - 0x00007ffac4c1c000 	C:\WINDOWS\SYSTEM32\SSPICLI.DLL
+0x00007ffab6200000 - 0x00007ffab6216000 	C:\WINDOWS\system32\napinsp.dll
+0x00007ffab61e0000 - 0x00007ffab61fa000 	C:\WINDOWS\system32\pnrpnsp.dll
+0x00007ffac2800000 - 0x00007ffac2818000 	C:\WINDOWS\system32\NLAapi.dll
+0x00007ffac46b0000 - 0x00007ffac470c000 	C:\WINDOWS\System32\mswsock.dll
+0x00007ffac44a0000 - 0x00007ffac4540000 	C:\WINDOWS\SYSTEM32\DNSAPI.dll
+0x00007ffac6c30000 - 0x00007ffac6c38000 	C:\WINDOWS\System32\NSI.dll
+0x00007ffaba9e0000 - 0x00007ffaba9ee000 	C:\WINDOWS\System32\winrnr.dll
+0x00007ffab61c0000 - 0x00007ffab61d5000 	C:\WINDOWS\System32\wshbth.dll
+0x00007ffa7d760000 - 0x00007ffa7e4de000 	D:\Programs\Dynatrace\agent\lib64\oneagentcore.dll
+0x00007ffac8150000 - 0x00007ffac820f000 	C:\WINDOWS\System32\OLEAUT32.dll
+0x00007ffac6430000 - 0x00007ffac64cc000 	C:\WINDOWS\System32\msvcp_win.dll
+0x00007ffac4e50000 - 0x00007ffac4fe2000 	C:\WINDOWS\SYSTEM32\dbghelp.dll
+0x00007ffac1220000 - 0x00007ffac1236000 	C:\WINDOWS\SYSTEM32\dhcpcsvc6.DLL
+0x00007ffac1350000 - 0x00007ffac136a000 	C:\WINDOWS\SYSTEM32\dhcpcsvc.DLL
+0x00007ffabd020000 - 0x00007ffabd02a000 	C:\Windows\System32\rasadhlp.dll
+0x00007ffabeaf0000 - 0x00007ffabeb5a000 	C:\WINDOWS\System32\fwpuclnt.dll
+0x00007ffac5390000 - 0x00007ffac53bb000 	C:\WINDOWS\SYSTEM32\bcrypt.dll
+0x00007ffac4dd0000 - 0x00007ffac4de7000 	C:\WINDOWS\SYSTEM32\CRYPTSP.dll
+0x00007ffac4910000 - 0x00007ffac4943000 	C:\WINDOWS\system32\rsaenh.dll
+0x00007ffac13d0000 - 0x00007ffac13db000 	C:\WINDOWS\SYSTEM32\WINNSI.DLL
+0x000000006c980000 - 0x000000006c996000 	C:\Program Files\Java\jdk1.8.0_111\jre\bin\zip.dll
+
+VM Arguments:
+jvm_args: -Dfile.encoding=UTF-8 -agentpath:D:/Programs/Dynatrace/agent/lib64/oneagentloader.dll=loglevelcon=none,server=https://sg-eu-west-1-54-77-244-216-prod-eu-west-4-ireland.live.ruxit.com/communication;https://54.77.244.216/communication;https://sg-eu-west-1-52-17-182-176-prod-eu-west-4-ireland.live.ruxit.com/communication;https://52.17.182.176/communication;https://sg-eu-west-1-54-77-242-73-prod-eu-west-4-ireland.live.ruxit.com/communication;https://54.77.242.73/communication;https://zia93577.live.dynatrace.com:443/communication,tenant=zia93577,tenanttoken=ZEx8Z5MfVKrDngiu 
+java_command: main.Main
+java_class_path (initial): C:\Users\Adem\Dropbox (Personlig)\KEASource\workspace2.1\AdemOkmenPhotography3\mysql-connector-java-5.1.32-bin.jar;D:\Programs\NetBeans 8.2\platform\modules\ext\junit-4.12.jar;C:\Users\Adem\Dropbox (Personlig)\KEASource\workspace2.1\AdemOkmenPhotography3\build\classes
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+PATH=C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Skype\Phone\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;D:\Programs\Git\cmd;D:\Programs\Git\mingw64\bin;D:\Programs\Git\usr\bin;C:\Users\Adem\AppData\Local\Microsoft\WindowsApps;
+USERNAME=Adem
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 94 Stepping 3, GenuineIntel
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows 10.0 , 64 bit Build 14393 (10.0.14393.0)
+
+CPU:total 4 (4 cores per cpu, 1 threads per core) family 6 model 94 stepping 3, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, sse4.1, sse4.2, popcnt, avx, avx2, aes, clmul, erms, rtm, 3dnowpref, lzcnt, tsc, tscinvbit, bmi1, bmi2, adx
+
+Memory: 4k page, physical 8264648k(1743396k free), swap 19274696k(11211180k free)
+
+vm_info: Java HotSpot(TM) 64-Bit Server VM (25.111-b14) for windows-amd64 JRE (1.8.0_111-b14), built on Sep 22 2016 19:24:05 by "java_re" with MS VC++ 10.0 (VS2010)
+
+time: Thu Nov 10 15:13:49 2016
+elapsed time: 1 seconds (0d 0h 0m 1s)
+

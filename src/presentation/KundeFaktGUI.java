@@ -140,7 +140,7 @@ public class KundeFaktGUI {
 
 
 
-				// printer bekræftelse og disposer mainframe'en.
+				// printer bekrï¿½ftelse og disposer mainframe'en.
 				JOptionPane.showMessageDialog(null, "Fakturaen for " + fornavn + "  " + virkNavn + " " +" er oprettet i Databasen");
 //				mainframe.dispose(); 
 
@@ -150,7 +150,7 @@ public class KundeFaktGUI {
 			}
 
 			public void addExtra(String kategori, int eksMoms) {
-				//		1100 - Indtægter
+				//		1100 - Indtï¿½gter
 
 				if (kategori.equals("1110 - Salg")) {
 					try {
@@ -176,7 +176,7 @@ public class KundeFaktGUI {
 						e.printStackTrace();
 					}
 
-				}	else if (kategori.equals("1120 - Salg til øvrig udland - varer")) {
+				}	else if (kategori.equals("1120 - Salg til ï¿½vrig udland - varer")) {
 					try {
 						FakturaSQL.add1120SalgVarerUdland(eksMoms);
 					} catch (SQLException e) {
@@ -184,7 +184,7 @@ public class KundeFaktGUI {
 						e.printStackTrace();
 					}
 
-				}	else if (kategori.equals("1130 - Salg til øvrig udland - ydelser")) {
+				}	else if (kategori.equals("1130 - Salg til ï¿½vrig udland - ydelser")) {
 					try {
 						FakturaSQL.add1130SalgYdelseUdland(eksMoms);
 					} catch (SQLException e) {
@@ -225,7 +225,7 @@ public class KundeFaktGUI {
 					}
 
 
-//					2200 - Finansielle indtægter
+//					2200 - Finansielle indtï¿½gter
 
 				}	else if (kategori.equals("2220 - Rykkergebyrer")) {
 					try {
@@ -235,7 +235,7 @@ public class KundeFaktGUI {
 						e.printStackTrace();
 					}
 
-				}	else if (kategori.equals("2230 - Renteindtægter")) {
+				}	else if (kategori.equals("2230 - Renteindtï¿½gter")) {
 					try {
 						FakturaSQL.add2230RenteIndtægt(eksMoms);
 					} catch (SQLException e) {
@@ -243,7 +243,7 @@ public class KundeFaktGUI {
 						e.printStackTrace();
 					}
 
-				}	else if (kategori.equals("2240 - Gebyr indtægter")) {
+				}	else if (kategori.equals("2240 - Gebyr indtï¿½gter")) {
 					try {
 						FakturaSQL.add2240GebyrIndtægt(eksMoms);
 					} catch (SQLException e) {
@@ -252,8 +252,8 @@ public class KundeFaktGUI {
 					}
 					
 					
-//					2500 - Ekstraordinære poster
-				}	else if (kategori.equals("2510 - Ekstraordinære indtægter m/ moms")) {
+//					2500 - Ekstraordinï¿½re poster
+				}	else if (kategori.equals("2510 - Ekstraordinï¿½re indtï¿½gter m/ moms")) {
 					try {
 						FakturaSQL.add2510EkstraOrdIndtInklMoms(eksMoms);
 					} catch (SQLException e) {

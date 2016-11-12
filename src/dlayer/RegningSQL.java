@@ -25,7 +25,7 @@ public class RegningSQL
 
 
 
-			// Tilføjer til DB med værdierne fra RegningGUI
+			// Tilfæjer til DB med værdierne fra RegningGUI
 			prepareStatement.setString(1, supplier );
 			prepareStatement.setString(2, category );
 			prepareStatement.setInt(3, momsType);
@@ -59,7 +59,7 @@ public class RegningSQL
 
 
 			prepareStatement = conn.prepareStatement("INSERT INTO economy.1200_salgsomkostninger "
-					+ "(1210_vareindkøb) VALUES (?);");
+					+ "(1210_vareindkæb) VALUES (?);");
 
 
 
@@ -86,7 +86,7 @@ public class RegningSQL
 
 
 			prepareStatement = conn.prepareStatement("INSERT INTO economy.1200_salgsomkostninger "
-					+ "(1220_købVarerEU) VALUES (?);");
+					+ "(1220_kæbVarerEU) VALUES (?);");
 
 
 			prepareStatement.setInt(1, value);	
@@ -111,7 +111,7 @@ public class RegningSQL
 
 
 			prepareStatement = conn.prepareStatement("INSERT INTO economy.1200_salgsomkostninger"
-					+ " (1230_købYdelserEU) VALUES (?);");				
+					+ " (1230_kæbYdelserEU) VALUES (?);");				
 
 			prepareStatement.setInt(1, value);	
 			prepareStatement.executeUpdate();
@@ -135,7 +135,7 @@ public class RegningSQL
 
 
 			prepareStatement = conn.prepareStatement("INSERT INTO economy.1200_salgsomkostninger "
-					+ "(1240_købVarerUdland) VALUES (?);");				
+					+ "(1240_kæbVarerUdland) VALUES (?);");				
 
 			prepareStatement.setInt(1, value);	
 			prepareStatement.executeUpdate();
@@ -159,7 +159,7 @@ public class RegningSQL
 
 
 			prepareStatement = conn.prepareStatement("INSERT INTO economy.1200_salgsomkostninger "
-					+ "(1250_købYdelserUdland) VALUES (?);");
+					+ "(1250_kæbYdelserUdland) VALUES (?);");
 
 
 			prepareStatement.setInt(1, value);	
@@ -228,7 +228,7 @@ public class RegningSQL
 
 
 
-	//	1400 - Lønomkostninger
+	//	1400 - Lænomkostninger
 
 	public static void add1410AM(int value) throws SQLException 
 	{
@@ -239,7 +239,7 @@ public class RegningSQL
 			PreparedStatement prepareStatement = null;
 
 
-			prepareStatement = conn.prepareStatement("INSERT INTO `economy`.`1400_lønomkostninger` (`1410_AM`) VALUES (?);");
+			prepareStatement = conn.prepareStatement("INSERT INTO `economy`.`1400_lænomkostninger` (`1410_AM`) VALUES (?);");
 
 
 			prepareStatement.setInt(1, value);	
@@ -263,7 +263,7 @@ public class RegningSQL
 			PreparedStatement prepareStatement = null;
 
 
-			prepareStatement = conn.prepareStatement("INSERT INTO `economy`.`1400_lønomkostninger` (`1420_ATP`) VALUES (?);");
+			prepareStatement = conn.prepareStatement("INSERT INTO `economy`.`1400_lænomkostninger` (`1420_ATP`) VALUES (?);");
 
 
 			prepareStatement.setInt(1, value);	
@@ -287,7 +287,7 @@ public class RegningSQL
 			PreparedStatement prepareStatement = null;
 
 
-			prepareStatement = conn.prepareStatement("INSERT INTO `economy`.`1400_lønomkostninger` (`1230_personalegoder`) VALUES (?);");
+			prepareStatement = conn.prepareStatement("INSERT INTO `economy`.`1400_lænomkostninger` (`1230_personalegoder`) VALUES (?);");
 
 
 			prepareStatement.setInt(1, value);	
@@ -313,7 +313,7 @@ public class RegningSQL
 			PreparedStatement prepareStatement = null;
 
 
-			prepareStatement = conn.prepareStatement("INSERT INTO `economy`.`1400_lønomkostninger` (`1440_personalepleje`) VALUES (?);");
+			prepareStatement = conn.prepareStatement("INSERT INTO `economy`.`1400_lænomkostninger` (`1440_personalepleje`) VALUES (?);");
 
 
 			prepareStatement.setInt(1, value);	
@@ -342,7 +342,7 @@ public class RegningSQL
 			PreparedStatement prepareStatement = null;
 
 
-			prepareStatement = conn.prepareStatement("INSERT INTO `economy`.`1400_lønomkostninger` (`1450_pension`) VALUES (?);");
+			prepareStatement = conn.prepareStatement("INSERT INTO `economy`.`1400_lænomkostninger` (`1450_pension`) VALUES (?);");
 
 
 			prepareStatement.setInt(1, value);	
@@ -367,7 +367,7 @@ public class RegningSQL
 			PreparedStatement prepareStatement = null;
 
 
-			prepareStatement = conn.prepareStatement("INSERT INTO `economy`.`1400_lønomkostninger` (`1460_fradrag`) VALUES (?);");
+			prepareStatement = conn.prepareStatement("INSERT INTO `economy`.`1400_lænomkostninger` (`1460_fradrag`) VALUES (?);");
 
 
 			prepareStatement.setInt(1, value);	
@@ -393,7 +393,7 @@ public class RegningSQL
 			PreparedStatement prepareStatement = null;
 
 
-			prepareStatement = conn.prepareStatement("INSERT INTO `economy`.`1400_lønomkostninger` (`1470_socialeOmkostninger`) VALUES (?);");
+			prepareStatement = conn.prepareStatement("INSERT INTO `economy`.`1400_lænomkostninger` (`1470_socialeOmkostninger`) VALUES (?);");
 
 
 			prepareStatement.setInt(1, value);	
@@ -421,7 +421,7 @@ public class RegningSQL
 			PreparedStatement prepareStatement = null;
 
 
-			prepareStatement = conn.prepareStatement("INSERT INTO `economy`.`1400_lønomkostninger` (`1480_tillæg`) VALUES (?);");
+			prepareStatement = conn.prepareStatement("INSERT INTO `economy`.`1400_lænomkostninger` (`1480_tillæg`) VALUES (?);");
 
 
 			prepareStatement.setInt(1, value);	
@@ -448,7 +448,7 @@ public class RegningSQL
 			PreparedStatement prepareStatement = null;
 
 
-			prepareStatement = conn.prepareStatement("INSERT INTO `economy`.`1400_lønomkostninger` (`1485_BHonorar`) VALUES (?);");
+			prepareStatement = conn.prepareStatement("INSERT INTO `economy`.`1400_lænomkostninger` (`1485_BHonorar`) VALUES (?);");
 
 
 			prepareStatement.setInt(1, value);	
@@ -474,7 +474,7 @@ public class RegningSQL
 			PreparedStatement prepareStatement = null;
 
 
-			prepareStatement = conn.prepareStatement("INSERT INTO `economy`.`1400_lønomkostninger` (`1490_feriepenge`) VALUES (?);");
+			prepareStatement = conn.prepareStatement("INSERT INTO `economy`.`1400_lænomkostninger` (`1490_feriepenge`) VALUES (?);");
 
 
 			prepareStatement.setInt(1, value);	
@@ -486,7 +486,7 @@ public class RegningSQL
 		{
 			System.err.println(e);
 		}
-	} // Lønomkostninger slut
+	} // Lænomkostninger slut
 
 
 
@@ -582,7 +582,7 @@ public class RegningSQL
 			PreparedStatement prepareStatement = null;
 
 
-			prepareStatement = conn.prepareStatement("INSERT INTO `economy`.`1500_lokaleomkostninger` (`1540_vedligeholdelseRengøring`) VALUES (?);");
+			prepareStatement = conn.prepareStatement("INSERT INTO `economy`.`1500_lokaleomkostninger` (`1540_vedligeholdelseRengæring`) VALUES (?);");
 
 
 			prepareStatement.setInt(1, value);	
@@ -989,7 +989,7 @@ public class RegningSQL
 			PreparedStatement prepareStatement = null;
 
 
-			prepareStatement = conn.prepareStatement("INSERT INTO `economy`.`1800_adminomkostninger` (`1840_småanskaffelser`) VALUES (?);");
+			prepareStatement = conn.prepareStatement("INSERT INTO `economy`.`1800_adminomkostninger` (`1840_smæanskaffelser`) VALUES (?);");
 
 
 			prepareStatement.setInt(1, value);	
@@ -1013,7 +1013,7 @@ public class RegningSQL
 			PreparedStatement prepareStatement = null;
 
 
-			prepareStatement = conn.prepareStatement("INSERT INTO `economy`.`1800_adminomkostninger` (`1850_kørselgodtgørelse`) VALUES (?);");
+			prepareStatement = conn.prepareStatement("INSERT INTO `economy`.`1800_adminomkostninger` (`1850_kærselgodtgærelse`) VALUES (?);");
 
 
 			prepareStatement.setInt(1, value);	
@@ -1107,7 +1107,7 @@ public class RegningSQL
 			PreparedStatement prepareStatement = null;
 
 
-			prepareStatement = conn.prepareStatement("INSERT INTO `economy`.`1800_adminomkostninger` (`1890_tabPåKunder`) VALUES (?);");
+			prepareStatement = conn.prepareStatement("INSERT INTO `economy`.`1800_adminomkostninger` (`1890_tabPæKunder`) VALUES (?);");
 
 
 			prepareStatement.setInt(1, value);	
@@ -1502,7 +1502,7 @@ public class RegningSQL
 			PreparedStatement prepareStatement = null;
 
 
-			prepareStatement = conn.prepareStatement("INSERT INTO `economy`.`5800_omsætningsaktiver` (`5820_tilgodeLeverandør`) VALUES (?);");
+			prepareStatement = conn.prepareStatement("INSERT INTO `economy`.`5800_omsætningsaktiver` (`5820_tilgodeLeverandær`) VALUES (?);");
 
 
 			prepareStatement.setInt(1, value);	
@@ -1550,7 +1550,7 @@ public class RegningSQL
 
 
 
-	//	// Metode der tilføjer regning.
+	//	// Metode der tilfæjer regning.
 	//		public static void addSmaa(int value) throws SQLException 
 	//		{
 	//
@@ -1560,16 +1560,16 @@ public class RegningSQL
 	//				PreparedStatement prepareStatement = null;
 	//				
 	//
-	//				prepareStatement = conn.prepareStatement("INSERT INTO `finances`.`expense` (`småanskaffelser`)"
+	//				prepareStatement = conn.prepareStatement("INSERT INTO `finances`.`expense` (`smæanskaffelser`)"
 	//						+ " VALUES(?)");              
 	//
 	//				
 	//				
-	//	//leverandør, regningsdato, betalt, betlingsfrist, bilagsnr(auto increment), valuta,
+	//	//leverandær, regningsdato, betalt, betlingsfrist, bilagsnr(auto increment), valuta,
 	//				// beskrvelse, udgfskategori, momssats, eks. moms , ink moms(auto), 
 	//				
 	//				
-	//				// Tilføjer til DB med værdierne fra OpretMedlemGui
+	//				// Tilfæjer til DB med værdierne fra OpretMedlemGui
 	//				prepareStatement.setInt(1, value);
 	//				
 	//				prepareStatement.executeUpdate();
@@ -1599,11 +1599,11 @@ public class RegningSQL
 	//
 	//				
 	//				
-	//	//leverandør, regningsdato, betalt, betlingsfrist, bilagsnr(auto increment), valuta,
+	//	//leverandær, regningsdato, betalt, betlingsfrist, bilagsnr(auto increment), valuta,
 	//				// beskrvelse, udgfskategori, momssats, eks. moms , ink moms(auto), 
 	//				
 	//				
-	//				// Tilføjer til DB med værdierne fra OpretMedlemGui
+	//				// Tilfæjer til DB med værdierne fra OpretMedlemGui
 	//				prepareStatement.setInt(1, value);
 	//				
 	//				prepareStatement.executeUpdate();
@@ -1635,11 +1635,11 @@ public class RegningSQL
 	//
 	//				
 	//				
-	//	//leverandør, regningsdato, betalt, betlingsfrist, bilagsnr(auto increment), valuta,
+	//	//leverandær, regningsdato, betalt, betlingsfrist, bilagsnr(auto increment), valuta,
 	//				// beskrvelse, udgfskategori, momssats, eks. moms , ink moms(auto), 
 	//				
 	//				
-	//				// Tilføjer til DB med værdierne fra OpretMedlemGui
+	//				// Tilfæjer til DB med værdierne fra OpretMedlemGui
 	//				prepareStatement.setInt(1, value);
 	//				
 	//				prepareStatement.executeUpdate();
@@ -1667,11 +1667,11 @@ public class RegningSQL
 	//
 	//				
 	//				
-	//	//leverandør, regningsdato, betalt, betlingsfrist, bilagsnr(auto increment), valuta,
+	//	//leverandær, regningsdato, betalt, betlingsfrist, bilagsnr(auto increment), valuta,
 	//				// beskrvelse, udgfskategori, momssats, eks. moms , ink moms(auto), 
 	//				
 	//				
-	//				// Tilføjer til DB med værdierne fra OpretMedlemGui
+	//				// Tilfæjer til DB med værdierne fra OpretMedlemGui
 	//				prepareStatement.setInt(1, value);
 	//				
 	//				prepareStatement.executeUpdate();
@@ -1695,16 +1695,16 @@ public class RegningSQL
 	//				PreparedStatement prepareStatement = null;
 	//				
 	//
-	//				prepareStatement = conn.prepareStatement("INSERT INTO `finances`.`expense` (`kørsel`)"
+	//				prepareStatement = conn.prepareStatement("INSERT INTO `finances`.`expense` (`kærsel`)"
 	//						+ " VALUES(?)");              
 	//
 	//				
 	//				
-	//	//leverandør, regningsdato, betalt, betlingsfrist, bilagsnr(auto increment), valuta,
+	//	//leverandær, regningsdato, betalt, betlingsfrist, bilagsnr(auto increment), valuta,
 	//				// beskrvelse, udgfskategori, momssats, eks. moms , ink moms(auto), 
 	//				
 	//				
-	//				// Tilføjer til DB med værdierne fra OpretMedlemGui
+	//				// Tilfæjer til DB med værdierne fra OpretMedlemGui
 	//				prepareStatement.setInt(1, value);
 	//				
 	//				prepareStatement.executeUpdate();
@@ -1733,11 +1733,11 @@ public class RegningSQL
 	//
 	//				
 	//				
-	//	//leverandør, regningsdato, betalt, betlingsfrist, bilagsnr(auto increment), valuta,
+	//	//leverandær, regningsdato, betalt, betlingsfrist, bilagsnr(auto increment), valuta,
 	//				// beskrvelse, udgfskategori, momssats, eks. moms , ink moms(auto), 
 	//				
 	//				
-	//				// Tilføjer til DB med værdierne fra OpretMedlemGui
+	//				// Tilfæjer til DB med værdierne fra OpretMedlemGui
 	//				prepareStatement.setInt(1, value);
 	//				
 	//				prepareStatement.executeUpdate();
@@ -1767,11 +1767,11 @@ public class RegningSQL
 	//
 	//				
 	//				
-	//	//leverandør, regningsdato, betalt, betlingsfrist, bilagsnr(auto increment), valuta,
+	//	//leverandær, regningsdato, betalt, betlingsfrist, bilagsnr(auto increment), valuta,
 	//				// beskrvelse, udgfskategori, momssats, eks. moms , ink moms(auto), 
 	//				
 	//				
-	//				// Tilføjer til DB med værdierne fra OpretMedlemGui
+	//				// Tilfæjer til DB med værdierne fra OpretMedlemGui
 	//				prepareStatement.setInt(1, value);
 	//				
 	//				prepareStatement.executeUpdate();
