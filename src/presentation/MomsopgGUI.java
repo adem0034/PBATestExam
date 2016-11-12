@@ -292,69 +292,68 @@ public class MomsopgGUI {
 
 
 
-
-			ArrayList<MomsOpg> momsYdelserUdland = MomsSQL.momsYdelseUdland();
-
-
-			// Opretter object der navngives "header" og giver den parametre. 
-			Object[] header6 = {"Moms af ydelser købt i udlandet"};
-
-			Object[][] dataSum6 = new Object[momsYdelserUdland.size()][1];
-
-
-
-			int q=0;
-			for (MomsOpg momsOpg : momsYdelserUdland) {
-
-				// toObjectArray returnere et object array, hvilket blive gemt i data[].
-				dataSum6[q] = momsOpg.toObjectArray6();
-
-				q++;
-			}
-
-
-			
-
-			ArrayList<MomsOpg> rubAVarer = MomsSQL.rubAVarer();
-
-
-			// Opretter object der navngives "header" og giver den parametre. 
-			Object[] header7 = {"Rubrik A - Varer"};
-
-			Object[][] dataSum7 = new Object[rubAVarer.size()][1];
-
-
-
-			int qq=0;
-			for (MomsOpg momsOpg : rubAVarer) {
-
-				// toObjectArray returnere et object array, hvilket blive gemt i data[].
-				dataSum7[qq] = momsOpg.toObjectArray7();
-
-				qq++;
-			}
- 
 //
-			
-
-			ArrayList<MomsOpg> rubAYdelse = MomsSQL.rubAYdelser();
+//			ArrayList<MomsOpg> momsYdelserUdland = MomsSQL.momsYdelseUdland();
+//
+//
+//			// Opretter object der navngives "header" og giver den parametre. 
+//			Object[] header6 = {"Moms af ydelser købt i udlandet"};
+//
+//			Object[][] dataSum6 = new Object[momsYdelserUdland.size()][1];
+//
+//
+//
+//			int q=0;
+//			for (MomsOpg momsOpg : momsYdelserUdland) {
+//
+//				// toObjectArray returnere et object array, hvilket blive gemt i data[].
+//				dataSum6[q] = momsOpg.toObjectArray6();
+//
+//				q++;
+//			}
+//
+//
+//			
+//
+//			ArrayList<MomsOpg> rubAVarer = MomsSQL.rubAVarer();
 
 
 			// Opretter object der navngives "header" og giver den parametre. 
-			Object[] header8 = {"Rubrik A - Ydelser"};
-
-			Object[][] dataSum8 = new Object[rubAYdelse.size()][1];
-
-
-
-			int qqw=0;
-			for (MomsOpg momsOpg : rubAYdelse) {
-
-				// toObjectArray returnere et object array, hvilket blive gemt i data[].
-				dataSum8[qqw] = momsOpg.toObjectArray8();
-
-				qqw++;
-			}
+//			Object[] header7 = {"Rubrik A - Varer"};
+//
+//			Object[][] dataSum7 = new Object[rubAVarer.size()][1];
+//
+//
+//
+//			int qq=0;
+//			for (MomsOpg momsOpg : rubAVarer) {
+//
+//				// toObjectArray returnere et object array, hvilket blive gemt i data[].
+//				dataSum7[qq] = momsOpg.toObjectArray7();
+//
+//				qq++;
+//			}
+// 
+////
+//			
+//
+//			ArrayList<MomsOpg> rubAYdelse = MomsSQL.rubAYdelser();
+//
+//
+//			// Opretter object der navngives "header" og giver den parametre. 
+//			Object[] header8 = {"Rubrik A - Ydelser"};
+//
+//			Object[][] dataSum8 = new Object[rubAYdelse.size()][1];
+//
+//
+//
+//			int qqw=0;
+//			for (MomsOpg momsOpg : rubAYdelse) {
+//
+//				// toObjectArray returnere et object array, hvilket blive gemt i data[].
+//				dataSum8[qqw] = momsOpg.toObjectArray8();
+//
+//				qqw++;
 
 
 
@@ -391,26 +390,26 @@ public class MomsopgGUI {
 
 
 			//			 Opretter en DefaultTableModel, og indsï¿½tter bï¿½de data og header
-			DefaultTableModel modelMomsVarUd = new DefaultTableModel(dataSum5, header5);
-			modelMomsVarUd.setColumnIdentifiers(header5);
-			table5.setModel(modelMomsVarUd);
+//			DefaultTableModel modelMomsVarUd = new DefaultTableModel(dataSum5, header5);
+//			modelMomsVarUd.setColumnIdentifiers(header5);
+//			table5.setModel(modelMomsVarUd);
 
-
-			//			Opretter en DefaultTableModel, og indsï¿½tter bï¿½de data og header
-			DefaultTableModel modelMomsYdUd = new DefaultTableModel(dataSum6, header6);
-			modelMomsYdUd.setColumnIdentifiers(header6);
-			table6.setModel(modelMomsYdUd);
-
-
-			//			Opretter en DefaultTableModel, og indsï¿½tter bï¿½de data og header
-			DefaultTableModel modelRubAVarer = new DefaultTableModel(dataSum7, header7);
-			modelRubAVarer.setColumnIdentifiers(header7);
-			table7.setModel(modelRubAVarer);
-			
-			//			Opretter en DefaultTableModel, og indsï¿½tter bï¿½de data og header
-			DefaultTableModel modelRubAYdelser = new DefaultTableModel(dataSum8, header8);
-			modelRubAYdelser.setColumnIdentifiers(header8);
-			table8.setModel(modelRubAYdelser);
+//
+//			//			Opretter en DefaultTableModel, og indsï¿½tter bï¿½de data og header
+//			DefaultTableModel modelMomsYdUd = new DefaultTableModel(dataSum6, header6);
+//			modelMomsYdUd.setColumnIdentifiers(header6);
+//			table6.setModel(modelMomsYdUd);
+//
+//
+//			//			Opretter en DefaultTableModel, og indsï¿½tter bï¿½de data og header
+//			DefaultTableModel modelRubAVarer = new DefaultTableModel(dataSum7, header7);
+//			modelRubAVarer.setColumnIdentifiers(header7);
+//			table7.setModel(modelRubAVarer);
+//			
+//			//			Opretter en DefaultTableModel, og indsï¿½tter bï¿½de data og header
+//			DefaultTableModel modelRubAYdelser = new DefaultTableModel(dataSum8, header8);
+//			modelRubAYdelser.setColumnIdentifiers(header8);
+//			table8.setModel(modelRubAYdelser);
 
 
 
