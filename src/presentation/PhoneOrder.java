@@ -166,7 +166,7 @@ public class PhoneOrder {
 			JComboBox<String> itemCombo) {
 		try{
 
-			String s[]=new String[1000];
+			String s[]=new String[50000];
 
 
 
@@ -190,7 +190,7 @@ public class PhoneOrder {
 
 
 		}catch(Exception e){
-			JOptionPane.showMessageDialog(null, "ERROR");
+			JOptionPane.showMessageDialog(null, e);
 		}finally{
 			try{
 				st.close();

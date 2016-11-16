@@ -32,18 +32,18 @@ public class GuiMain {
 
 
 
-		// Opretter btnBooking, tilføjer den til mainframe og kalder BookingGUI
-		JButton btnBooking = new JButton("Booking / meeting");
-		btnBooking.setBounds(134, 22, 181, 29);
-		mainframe.getContentPane().add(btnBooking);
-		btnBooking.addActionListener(new ActionListener() {
-
-			@Override
-			public void actionPerformed(ActionEvent e) {
-				BookingGUI.init();
-			}
-		});
-
+//		// Opretter btnBooking, tilføjer den til mainframe og kalder BookingGUI
+//		JButton btnBooking = new JButton("Booking / meeting");
+//		btnBooking.setBounds(134, 22, 181, 29);
+//		mainframe.getContentPane().add(btnBooking);
+//		btnBooking.addActionListener(new ActionListener() {
+//
+//			@Override
+//			public void actionPerformed(ActionEvent e) {
+//				BookingGUI.init();
+//			}
+//		});
+//
 		// Opretter btnMoms, tilføjer den til mainframe og kalder MomsGUI
 		JButton btnMoms = new JButton("Finances");
 		btnMoms.setBounds(317, 22, 181, 29);
