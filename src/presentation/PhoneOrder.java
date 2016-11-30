@@ -197,7 +197,7 @@ public class PhoneOrder {
 				rs.close();
 				con.close();
 			}catch(Exception e){
-				JOptionPane.showMessageDialog(null, "ERROR CLOSE");
+				JOptionPane.showMessageDialog(null, "Error. Shutting down.");
 			}
 		}
 
